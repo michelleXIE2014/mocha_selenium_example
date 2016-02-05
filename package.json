@@ -1,0 +1,13 @@
+{
+  "name": "mocha_selenium_example",
+  "version": "1.0.0",
+  "description": "A very simple mocha + node.js + selenium test",
+  "author": "Michelle XIE <michelle.xie@hotmail.com>",
+  "scripts": {
+    "test": "mocha demoTest.js"
+  },
+  "dependencies": {
+    "mocha": "^2.4.5",
+    "selenium-webdriver": "^2.48.2"
+  }
+}

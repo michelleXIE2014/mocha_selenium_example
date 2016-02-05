@@ -1,0 +1,9 @@
+machine:
+  node:
+    version: 4.2.1
+    
+test:
+  override:
+      - pwd
+      - ls -al
+      - mocha googleTest.js
