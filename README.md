@@ -15,7 +15,23 @@ For python: robotFramework + jenkins
 | - local browser |               |                     |                |    
 | - report        | testng report: xml |  looking for tool to generation xml report  | robot test report  |    
 | - parallel      | yes           |  yes, not in the demo yet  |  not try yet |    
-| - pageFactory   | yes           | did not see it in the api doc | do not know |    
+| - pageFactory   | yes           | did not see it in the api doc | do not know |   
+
+
+## How to run it locally    
+0. open your terminal and install node.js first.    
+1. run `npm install`    
+2. run `mocha googleTest.js`    
+
+## How to run it on circleCI    
+1. add the circleCI project in circleCI.    
+2. circleCI picks up the circle.xml and automatically run the test.     
+
+## How to run it on jenkins    
+1. create a jenkins job    
+2. in the job configuration: set commands: npm install && mocha googleTest.js    
+
+
 
 
 
