@@ -51,9 +51,9 @@ test.describe('googleSearch', function() {
 						});
 					}, 100000, 'Failed to find element after 1000 second');
 
-				driver.findElement(By.css("#logo")).getAttribute("title").then(function(textValue) {
-					//console.log("------  the text is " + textValue);
-					assert.equal(textValue, "Go to Google Home");
+				driver.findElement(By.css("a.iu-card-header")).getText().then(function(textValue) {
+					console.log("------  the text is " + textValue);
+					assert.equal(textValue, "Images for I love selenium");
 				});
 
 				driver.quit();
